@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Completo em HTML</title>
+    <link rel="icon" href="o-que-e-html.jpg" type="image/x-icon">
+    <style>
+        link rel="preconnect" href="https://fonts.googleapis.com">
+        link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap" rel="stylesheet">;
+        body {
+            line-height: 1.6;
+            background-color:#94ebfa;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto Completo em HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#lista">Lista</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+                <li><a href="#multimidia">Multimídia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto foi criado para demonstrar o uso de diferentes elementos HTML. Inclui cabeçalho, rodapé, imagens, links, tabelas, listas, formulários e até mesmo elementos multimídia.</p>
+            <p>HTML é uma linguagem de marcação essencial para o desenvolvimento web, e este exemplo mostra como muitos de seus elementos podem ser aplicados em uma única página.</p>
+            <iframe src="Captura de tela 2024-11-07 084018.png" width="1500" height="600"></iframe>
+        </section>
+
+        <!-- Seção Tabela -->
+        <section id="tabela">
+            <h2>Tabela de Dados</h2>
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td>Produto A</td>
+                    <td>R$ 20,00</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Produto B</td>
+                    <td>R$ 15,00</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Produto C</td>
+                    <td>R$ 30,00</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Seção Lista -->
+        <section id="lista">
+            <h2>Lista de Tarefas</h2>
+            <h3>Lista Ordenada:</h3>
+            <ol>
+                <li>Aprender HTML</li>
+                <li>Estudar CSS</li>
+                <li>Praticar JavaScript</li>
+            </ol>
+
+            <h3>Lista Não Ordenada:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <!-- Seção Formulário -->
+        <section id="formulario">
+            <h2>Formulário de Contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção Multimídia -->
+        <section id="multimidia">
+            <h2>Elementos Multimídia</h2>
+            
+            <h3>Vídeo Incorporado:</h3>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/16250647?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:80%;height:80%;" title="Xuxa Só Para Baixinhos 10"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            
+            <h3>Áudio Incorporado:</h3>
+
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meu Projeto HTML. Todos os direitos reservados criado por Maria Janyelle .</p>
+    </footer>
+
+</body>
+</html>
